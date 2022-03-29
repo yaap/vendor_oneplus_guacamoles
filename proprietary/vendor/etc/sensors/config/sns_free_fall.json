@@ -12,13 +12,13 @@
       "data": "1"
     },
     "offset_to_mass_center_x": { "type": "flt", "ver": "0",
-      "data": "-0.01884505"
+      "data": "0.000000"
     },
     "offset_to_mass_center_y": { "type": "flt", "ver": "0",
-      "data": "-0.06352972"
+      "data": "0.000000"
     },
     "offset_to_mass_center_z": { "type": "flt", "ver": "0",
-      "data":  "0.00000000"
+      "data": "0.000000"
     },
     "detect_duration_ms": { "type": "int", "ver": "0",
       "data": "50"

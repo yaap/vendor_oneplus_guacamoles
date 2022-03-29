@@ -59,10 +59,10 @@
         "data": "+x"
       },
       "y":{ "type": "str", "ver": "0",
-        "data": "+y"
+        "data": "-y"
       },
       "z":{ "type": "str", "ver": "0",
-        "data": "+z"
+        "data": "-z"
       }
     },
     ".gyro":{
