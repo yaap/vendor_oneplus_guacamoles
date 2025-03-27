@@ -44,27 +44,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liboemnvbk_img_helper",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/liboemnvbk_img_helper.so"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liboemnvbk_img_helper.so"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "com.qti.sensor.gc5035",
 	owner: "oneplus",
 	strip: {
@@ -1106,41 +1085,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmdmdetect_vendor",
-	stem: "libmdmdetect",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmdmdetect.so"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmdmimgload",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmdmimgload.so"],
-			shared_libs: ["libcutils", "libutils", "liblog", "liboemnvbk_img_helper", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "sensors.ssc",
 	owner: "oneplus",
 	strip: {
@@ -1153,82 +1097,6 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-sh_binary {
-	name: "init.mdm",
-	owner: "oneplus",
-	src: "proprietary/vendor/bin/init.mdm.sh",
-	filename: "init.mdm.sh",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "ks",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/ks"],
-			shared_libs: ["libc", "libcutils", "libutils", "liblog", "libc++", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "mdm_helper",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/mdm_helper"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libmdmdetect_vendor", "libmdmimgload", "liboemnvbk_img_helper", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "mdm_helper_proxy",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/mdm_helper_proxy"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libmdmdetect_vendor", "libmdmimgload", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "oemnvbkdaemon",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/oemnvbkdaemon"],
-			shared_libs: ["libcutils", "libutils", "liblog", "liboemnvbk_img_helper", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
 	prefer: true,
 	soc_specific: true,
 }

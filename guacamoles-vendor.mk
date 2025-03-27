@@ -141,7 +141,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     audio.primary.msmnile \
-    liboemnvbk_img_helper \
     com.qti.sensor.gc5035 \
     com.qti.sensor.imx371 \
     com.qti.sensor.imx471 \
@@ -200,11 +199,4 @@ PRODUCT_PACKAGES += \
     libarm_proxy_skel \
     libgf_ud_hal \
     libhvx_proxy_stub \
-    libmdmdetect_vendor \
-    libmdmimgload \
-    sensors.ssc \
-    init.mdm \
-    ks \
-    mdm_helper \
-    mdm_helper_proxy \
-    oemnvbkdaemon
+    sensors.ssc
