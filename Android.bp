@@ -9,14 +9,8 @@ soong_namespace {
 		"hardware/oneplus",
 		"hardware/qcom-caf/sm8150",
 		"hardware/qcom/wlan/legacy",
-		"vendor/qcom/common/system/av",
-		"vendor/qcom/common/system/telephony",
-		"vendor/qcom/common/vendor/adreno-r",
-		"vendor/qcom/common/vendor/media-legacy",
-		"vendor/qcom/common/vendor/dsprpcd",
-		"vendor/qcom/common/system/wfd",
-		"vendor/qcom/opensource/dataservices",
 		"vendor/qcom/opensource/display",
+		"vendor/qcom/opensource/dataservices",
 	],
 }
 
